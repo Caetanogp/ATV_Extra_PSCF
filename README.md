@@ -32,19 +32,19 @@ Isso vai gerar o arquivo BuddySimulador.class.
 2) Execução
 Ainda na mesma pasta:
 
-bash
+
 
 java BuddySimulador
 No código, o nome/caminho do arquivo de entrada é controlado pela variável:
 
-java
+
 
 String arquivo = "C:\\Users\\Caetanogp123\\OneDrive\\Desktop\\PROJETOS INTELLIJ\\ATV_Extra_PSCF\\ATV_Extra_PSCF\\src\\programas.txt";
 Para rodar em outra máquina ou outro diretório, é só alterar essa String para o caminho correto do programas.txt.
 
 Se quiser deixar mais genérico, dá para trocar para:
 
-java
+
 
 String arquivo = "programas.txt";
 e colocar o programas.txt na mesma pasta de execução do programa.
@@ -52,7 +52,7 @@ e colocar o programas.txt na mesma pasta de execução do programa.
 Formato do arquivo de entrada (programas.txt)
 Cada linha do arquivo representa um programa:
 
-text
+
 
 <ROTULO> <TAMANHO_EM_KB>
 <ROTULO>: um caractere (A, B, C, ...).
@@ -61,7 +61,7 @@ text
 
 Exemplo (arquivo com 20 programas):
 
-text
+
 
 A 512
 B 1024
@@ -93,7 +93,7 @@ Menor bloco: 1024 bytes (1 KB).
 
 A memória é modelada como uma árvore binária implícita em vetores:
 
-java
+
 
 int[] statusNo;     // 0 = livre, 1 = dividido, 2 = usado
 char[] programaNo;  // rótulo do programa alocado naquele nó
