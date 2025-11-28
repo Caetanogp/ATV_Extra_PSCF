@@ -134,25 +134,20 @@ Ao final da execução, o programa mostra:
 
 Programas alocados:
 
-rótulo do programa,
-
-tamanho real em KB,
-
-tamanho do bloco alocado (potência de 2 em KB),
-
-posição na memória (offset em bytes).
+- rótulo do programa
+- tamanho real em KB
+- tamanho do bloco alocado (potência de 2 em KB)
+- posição na memória (offset em bytes)
 
 Blocos livres:
 
-tamanho do bloco em KB,
-
-offset em bytes.
+- tamanho do bloco em KB
+- offset em bytes
 
 Resumo:
 
-espaço livre total em bytes,
-
-quantidade de blocos livres (fragmentos).
+- espaço livre total em bytes
+- quantidade de blocos livres (fragmentos)
 
 Assim é possível conferir se a soma dos blocos alocados + livres = 4 MB e visualizar a fragmentação da memória.
 
