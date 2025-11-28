@@ -25,26 +25,20 @@ O programa lê de um arquivo TXT uma lista de programas (rótulo + tamanho em KB
 
 No terminal, dentro da pasta onde está o arquivo `BuddySimulador.java`:
 
-```bash
+
 javac BuddySimulador.java
 Isso vai gerar o arquivo BuddySimulador.class.
 
 2) Execução
 Ainda na mesma pasta:
-
-
-
 java BuddySimulador
+
 No código, o nome/caminho do arquivo de entrada é controlado pela variável:
-
-
 
 String arquivo = "C:\\Users\\Caetanogp123\\OneDrive\\Desktop\\PROJETOS INTELLIJ\\ATV_Extra_PSCF\\ATV_Extra_PSCF\\src\\programas.txt";
 Para rodar em outra máquina ou outro diretório, é só alterar essa String para o caminho correto do programas.txt.
 
 Se quiser deixar mais genérico, dá para trocar para:
-
-
 
 String arquivo = "programas.txt";
 e colocar o programas.txt na mesma pasta de execução do programa.
@@ -52,16 +46,12 @@ e colocar o programas.txt na mesma pasta de execução do programa.
 Formato do arquivo de entrada (programas.txt)
 Cada linha do arquivo representa um programa:
 
-
-
 <ROTULO> <TAMANHO_EM_KB>
 <ROTULO>: um caractere (A, B, C, ...).
 
 <TAMANHO_EM_KB>: um inteiro representando o tamanho em KB (entre 1 KB e 2048 KB).
 
 Exemplo (arquivo com 20 programas):
-
-
 
 A 512
 B 1024
@@ -83,6 +73,7 @@ Q 2046
 R 512
 S 1025
 T 999
+
 O programa foi feito para funcionar com qualquer arquivo no mesmo padrão: rótulo + tamanho em KB, um por linha.
 
 Decisões de projeto
