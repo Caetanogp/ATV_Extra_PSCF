@@ -33,19 +33,19 @@ Isso vai gerar o arquivo BuddySimulador.class.
 Ainda na mesma pasta:
 
 bash
-Copiar código
+
 java BuddySimulador
 No código, o nome/caminho do arquivo de entrada é controlado pela variável:
 
 java
-Copiar código
+
 String arquivo = "C:\\Users\\Caetanogp123\\OneDrive\\Desktop\\PROJETOS INTELLIJ\\ATV_Extra_PSCF\\ATV_Extra_PSCF\\src\\programas.txt";
 Para rodar em outra máquina ou outro diretório, é só alterar essa String para o caminho correto do programas.txt.
 
 Se quiser deixar mais genérico, dá para trocar para:
 
 java
-Copiar código
+
 String arquivo = "programas.txt";
 e colocar o programas.txt na mesma pasta de execução do programa.
 
@@ -53,7 +53,7 @@ Formato do arquivo de entrada (programas.txt)
 Cada linha do arquivo representa um programa:
 
 text
-Copiar código
+
 <ROTULO> <TAMANHO_EM_KB>
 <ROTULO>: um caractere (A, B, C, ...).
 
@@ -62,7 +62,7 @@ Copiar código
 Exemplo (arquivo com 20 programas):
 
 text
-Copiar código
+
 A 512
 B 1024
 C 256
@@ -94,7 +94,7 @@ Menor bloco: 1024 bytes (1 KB).
 A memória é modelada como uma árvore binária implícita em vetores:
 
 java
-Copiar código
+
 int[] statusNo;     // 0 = livre, 1 = dividido, 2 = usado
 char[] programaNo;  // rótulo do programa alocado naquele nó
 int[] tamanhoProgKB;// tamanho real do programa (KB)
