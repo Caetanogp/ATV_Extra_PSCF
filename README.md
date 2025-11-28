@@ -36,6 +36,7 @@ java BuddySimulador
 No código, o nome/caminho do arquivo de entrada é controlado pela variável:
 
 String arquivo = "C:\\Users\\Caetanogp123\\OneDrive\\Desktop\\PROJETOS INTELLIJ\\ATV_Extra_PSCF\\ATV_Extra_PSCF\\src\\programas.txt";
+
 Para rodar em outra máquina ou outro diretório, é só alterar essa String para o caminho correto do programas.txt.
 
 Se quiser deixar mais genérico, dá para trocar para:
