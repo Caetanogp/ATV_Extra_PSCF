@@ -167,4 +167,4 @@ Assim é possível conferir se a soma dos blocos alocados + livres = 4 MB e visu
 
 Vídeo (YouTube)
 
-(colocar aqui o link do YouTube)
+https://youtu.be/SnPWXZJLpXg
